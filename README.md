@@ -3,7 +3,8 @@
 Material Design concept with GSAP animation 
 ___
 ##### **About This Repo:**
-The Bonsall Project webpage was originally conceived in the winter of 2017 while participating in Hacktoberfest. 
+The original concept was to build something modern and flashy but not overdone to be submitted as part of a hackathon. It was left an incomplete template after discovering about the passing of a good friend. The project then became his namesake dedicated to depression awareness and suicide prevention.  
+##### In Memory of John Bridger Bonsall (1989 - 2019)
 
 ##### **Features:**
 * Dynamic, fluid splash screen using the GSAP animation library
