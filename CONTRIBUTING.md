@@ -6,6 +6,12 @@ ___
  ##### Libraries may be replaced by similar ones (AnimeJS, ThreeJS, PixiJS, Materialize, etc.) <br> as long as the original concept is maintained.
  ##### Must contain external links or refer to Depression Awareness and Suicide Prevention topics <br> on the page. Please respect the personal history behind this repository. 
 ___
+#### How to Contribute:
+ * ##### Fork this Repo
+ * ##### Clone this Repo (open in your editor of choice)
+ * ##### Commit/Push your changes 
+ * ##### Open a new Pull Request or submit to an existing one
+___
 #### Hacktoberfest Submissions:
  ##### *Not all Pull Requests will be merged.* Don't let this discourage you from submitting. 
  ##### Pull requests will be accepted provided that they meet the designated requirements for submission. 
