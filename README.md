@@ -5,6 +5,7 @@ ___
 ##### **About This Repo:**
 The original concept was to build something modern and flashy but not overdone to be submitted as part of a hackathon. It was left an incomplete template after discovering about the passing of a good friend. The project then became his namesake dedicated to depression awareness and suicide prevention.  
 ##### In Memory of John Bridger Bonsall (1989 - 2019)
+##### In Memory of Ethan Ryan Skipper (1997 - 2021)
 
 ##### **Features:**
 * Dynamic, fluid splash screen using the GSAP animation library
