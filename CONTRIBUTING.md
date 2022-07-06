@@ -8,9 +8,9 @@ ___
 ___
 #### How to Contribute:
  * ##### Fork this Repo
- * ##### Clone this Repo (open in your editor of choice)
+ * ##### Introduce a new feature, fix an existing bug, or clean up current code
+ * ##### Open a new Pull Request or submit to an existing **Issue**
  * ##### Commit/Push your changes 
- * ##### Open a new Pull Request or submit to an existing one
 ___
 #### Hacktoberfest Submissions:
  ##### *Not all Pull Requests will be merged.* Don't let this discourage you from submitting. 
