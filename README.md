@@ -18,7 +18,7 @@ The original concept was to build something modern and flashy but not overdone t
 * **Material Design** pattern inspired layout aesthetic 
 * Interactive components tooled with the **P5js** processing library
 * Ease of use/flow thru smooth scrolling and animation transitions
-##### This site is build solely using HTML, CSS, and Javascript. No major frameworks have been thus far. <br> The **Material Design** aesthetic was achieved by simply using Font Awesome and CSS styling. 
+##### This site is build solely using HTML, CSS, and Javascript. No major frameworks have been used thus far. <br> The **Material Design** aesthetic was achieved by simply using Font Awesome and CSS styling. 
 ___
 ##### **Open Source and Contributing:**
 The Bonsall Project was created by [Javier Yzaguirre](https://github.com/inglorious-ratbastard) and is considered free and open source to use as reference for those wanting to create their own webpage from it or contribute to this project. For guidelines on [Contributing](CONTRIBUTING.md) to this repo please refer to the documentation for further details. 
