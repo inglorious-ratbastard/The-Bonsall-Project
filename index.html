@@ -6,18 +6,18 @@
     
     <title>The Bonsall Project</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
-    
-  </head>
-  <body>
+</head>
+
+<body>
     
     <div class="container">
     
@@ -31,21 +31,24 @@
     
     </div>
     
-       <div class="overlay-2"></div>
+    <div class="overlay-2"></div>
     
-    <!--landing page-->
     <div class="content">
     </div> 
 
     <div class="navbar">
-        <a href="#info" class="logo">Saffron</a>
+        <a href="#info" class="logo" style="font-size: 20px;">The Bonsall Project</a>
         <ol class="nav" style="list-style-type:none"> 
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contacts</a></li>
         </ol>
+        <label class="switch">
+          <input type="checkbox" id="checkbox" onclick="toggle()">
+          <span class="slider"></span>
+        </label>
     </div> 
      
     <div class="banner-area" id="home">
@@ -58,24 +61,28 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
         </div>
     </div>
-    <div class="port-area" id="portfolio">
+    
+    <div class="port-area" id="support">
         <div class="text-part">
-            <h1>Portfolio Area</h1>
+            <h1>Support Area</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
         </div>
     </div>
-    <div class="service-area" id="services">
+    
+    <div class="service-area" id="resources">
         <div class="text-part">
-            <h1>Services Area</h1>
+            <h1>Resources Area</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
         </div>
     </div>
+    
     <div class="contact-area" id="contact">
         <div class="text-part">
             <h1>Contact Area</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
         </div>
     </div>
+    
     <div class="info-area" id="info">
         <div class="text-part">
            <center> <h1>Info Area</h1> </center>
@@ -83,22 +90,20 @@
         </div>
     </div>     
         
-       <div class="container-m">
-       <div class="box shadow">
+    <div class="container-m">
+      <div class="box shadow">
        <div class="menu">
-            <ul>
-                <li><a href="#" style="text-decoration: none">Home</a></li>
-                <li><a href="#about" style="text-decoration: none">About</a></li>
-                <li><a href="#portfolio" style="text-decoration: none">Portfolio</a></li>
-                <li><a href="#services" style="text-decoration: none">Services</a></li>
-                <li><a href="#contact" style="text-decoration: none">Contact</a></li>
-            </ul>
-          </div>
+          <ul>
+            <li><a href="#" style="text-decoration: none">Home</a></li>
+            <li><a href="#about" style="text-decoration: none">About</a></li>
+            <li><a href="#support" style="text-decoration: none">Support</a></li>
+            <li><a href="#resources" style="text-decoration: none">Resources</a></li>
+            <li><a href="#contact" style="text-decoration: none">Contacts</a></li>
+          </ul>
         </div>
+      </div>
     </div>
-   
-  <!--end landing page--> 
-  
-<script src="script.js"></script> 
+ 
+<script src="script.js"></script>
 </body>
 </html>
