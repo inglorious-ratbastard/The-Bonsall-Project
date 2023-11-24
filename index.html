@@ -1,16 +1,17 @@
-<html>
+<!DOCTYPE html> 
+<html> 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>The Bonsall Project</title>
+    <title>The Bonsall Project : Mental Health Awareness Collaboration</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Poppins" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="/style.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>  
@@ -18,12 +19,11 @@
 </head>
 
 <body>
-    
     <div class="container">
     
       <div class="overlay">
            <p class="screen">The Bonsall Project</p>
-        
+           <p class="brand">Providing Hope, Healing, and Empowerment through <br> an increased awareness of our mental Well-being</p> 
       <div class="intro">
            <button class="myBtn" onclick="fadeOut()">EXPLORE</button>
         </div>
@@ -37,13 +37,13 @@
     </div> 
 
     <div class="navbar">
-        <a href="#info" class="logo" style="font-size: 20px;">The Bonsall Project</a>
+        <a href="#home" class="logo" style="font-size: 20px;">The Bonsall Project</a>
         <ol class="nav" style="list-style-type:none"> 
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#support">Support</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="#contact">Contacts</a></li>
+            <li><a href="#dialogue">Dialogue</a></li>
         </ol>
         <label class="switch">
           <input type="checkbox" id="checkbox" onclick="toggle()">
@@ -55,40 +55,224 @@
         
     </div>
       
-    <div class="about-area" id="about">
+    <div class="about-area abbt" id="about">
         <div class="text-part">
-            <h1>About Area</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
+            <center><h1>About Area</h1></center>
+          
+      <div class="grid-container">
+          <div class="flipper">
+            <div class="card">
+              <div class="front"></div>
+              <div class="back"><p>Let’s keep the conversation going about mental health and work towards a world where seeking help is encouraged and supported. <br><br> You are not alone. Seeking help for your mental health is a sign of strength, not weakness.</p></div>
+            </div>
+          </div>
+          <div class="phase"> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+          </div>
+      </div>  
+          
         </div>
     </div>
     
-    <div class="port-area" id="support">
+    <div class="port-area port" id="support">
         <div class="text-part">
-            <h1>Support Area</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
+            <center><h1>Support Area</h1></center>
+
+      <div class="grid-container">
+        <div class="phase"> 
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+        </div>
+
+        <div class="list-wrap">
+          <div class="list">
+            <h2>Observable Signs & Symptoms</h2>
+            <ol>
+              <li><span>Lorem ipsum dolor sit amet</span></li>
+              <li><span>Consectetur adipisicing elit</span></li>
+              <li><span>Ut labore et dolore magna aliqua</span></li>
+              <li><span>Ut enim ad minim veniam</span></li>
+              <li><span>Quis nostrud exercitation ullamco</span></li>
+              <li><span>Laboris nisi ut aliquip ex</span></li>
+              <li><span>Vestibulum sagittis urna libero, nec.</span></li>
+              <li><span>Morbi enim sem, iaculis nec.</span></li>
+            </ol>
+          </div>
+        </div>
+    </div> 
+
+          <div class="con">
+              <div class="con-tooltip top">
+                <p>Top</p>
+                <div class="tooltip ">
+                  <p>Top</p>
+                </div>
+              </div>
+
+              <div class="con-tooltip bottom">
+                  <p>Bottom</p>
+                  <div class="tooltip ">
+                    <p>Bottom</p>
+                  </div>
+                </div>
+
+                <div class="con-tooltip top">
+                  <p>Top</p>
+                  <div class="tooltip ">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+              <div class="con-tooltip bottom">
+                <p>Bottom</p>
+                <div class="tooltip ">
+                  <p>Bottom</p>
+                </div>
+              </div>
+          </div>
+          
         </div>
     </div>
     
-    <div class="service-area" id="resources">
+    <div class="service-area rsrc" id="resources">
         <div class="text-part">
-            <h1>Resources Area</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
+            <center><h1>Resources Area</h1></center>
+
+          <div class="grid-container">
+            <div class="accord-container">
+              <h4>Mental Health Resources & Links</h4>
+              <div class="accordion"> 
+                <div class="accordion-toggle" id="acdtog">
+                 <h3><svg class="f-triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 6.2"><title>triangle-right</title><path class="a" d="M0 6.2V0l7 3.1-7 3.1"/></svg>Question 1</h3>
+                </div>
+                <div class="accordion-content">
+                 <p>Link 1</p>
+                 <p>Link 2</p>
+                </div>
+                <div class="accordion-toggle" id="acdtog">
+                 <h3><svg class="f-triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 6.2"><title>triangle-right</title><path class="a" d="M0 6.2V0l7 3.1-7 3.1"/></svg>Question 2</h3>
+                </div>
+                <div class="accordion-content">
+                  <p>Link 1</p>
+                  <p>Link 2</p>
+                </div>
+                <div class="accordion-toggle" id="acdtog">
+                 <h3><svg class="f-triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 6.2"><title>triangle-right</title><path class="a" d="M0 6.2V0l7 3.1-7 3.1"/></svg>Question 3</h3>
+                </div>
+                <div class="accordion-content">
+                  <p>Link 1</p>
+                  <p>Link 2</p>
+                </div>
+                <div class="accordion-toggle" id="acdtog">
+                 <h3><svg class="f-triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 6.2"><title>triangle-right</title><path class="a" d="M0 6.2V0l7 3.1-7 3.1"/></svg>Question 4</h3>
+                </div>
+                <div class="accordion-content">
+                  <p>Link 1</p>
+                  <p>Link 2</p>
+                </div>
+                <div class="accordion-toggle" id="acdtog">
+                 <h3><svg class="f-triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 6.2"><title>triangle-right</title><path class="a" d="M0 6.2V0l7 3.1-7 3.1"/></svg>Question 5</h3>
+                </div>
+                <div class="accordion-content">
+                  <p>Link 1</p>
+                  <p>Link 2</p>
+                </div>
+              </div>
+            </div>
+            
+              <div class="phase"> 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+              </div>
+          </div>  
         </div>
     </div>
     
-    <div class="contact-area" id="contact">
+    <div class="contact-area cont" id="contact">
         <div class="text-part">
-            <h1>Contact Area</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
-        </div>
+            <center><h1>Contact Area</h1></center>
+          
+          <div class="grid-container">
+              <div class="phase"> 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p> 
+              </div>
+              <div class="phase">   
+                <div class="navlk"> 
+                  <ol>
+                    <li><a role="link" aria-disabled="true" style="color: #C2B280; font-weight: 600">Simple philosophies<div id="down-triangle"></div></a>
+                      <ol>
+                        <li><a href="#">Make it simple but significant.</a></li>
+                        <li><a href="#">Stay focused and keep shipping.</a></li>
+                        <li><a href="#">Done is better than perfect.</a></li>
+                        <li><a href="#">Design is how it works.</a></li>
+                        <li><a href="#">Think big, start small, learn fast.</a></li>
+                        <li><a href="#">Always be open minded to feedback.</a></li>  
+                        <li><a href="#">Learning is a part of growing.</a></li>   
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+          </div>  
+
+          <div class="con">
+              <div class="con-tooltip top">
+                <p>Top</p>
+                <div class="tooltip ">
+                  <p>Top</p>
+                </div>
+              </div>
+
+              <div class="con-tooltip bottom">
+                  <p>Bottom</p>
+                  <div class="tooltip ">
+                    <p>Bottom</p>
+                  </div>
+                </div>
+
+                <div class="con-tooltip top">
+                  <p>Top</p>
+                  <div class="tooltip ">
+                    <p>Top</p>
+                  </div>
+                </div>
+
+              <div class="con-tooltip bottom">
+                <p>Bottom</p>
+                <div class="tooltip ">
+                  <p>Bottom</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>  
     </div>
-    
-    <div class="info-area" id="info">
+  
+    <div class="info-area dial" id="dialogue">
         <div class="text-part">
-           <center> <h1>Info Area</h1> </center>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sint velit? Quisquam similique temporibus saepe quas nihil in minima molestiae cumque eius. Recusandae a atque, beatae quod necessitatibus dolorum ipsum facere blanditiis vel explicabo perspiciatis quia possimus ipsam quae nostrum qui assumenda voluptatem, exercitationem quo vero unde illum, officia inventore.</p>
+           <center><h1>Affirmations Area</h1></center>
+
+          <div class="trip-grid">
+             <div class="note-container">
+               <div class="sticky-note sticky-note-one" contenteditable="true" id="sticky">write something.....</div>
+             </div>
+             <div class="grid-item"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tellus augue. Praesent in nibh vitae lectus maximus convallis vitae et nisl. Suspendisse vel est eget nibh eleifend iaculis. Morbi urna velit, suscipit sed odio vel, mollis volutpat nibh. Suspendisse ac maximus purus. Nulla euismod, tellus a faucibus imperdiet, neque nulla varius tellus, quis scelerisque massa erat ac neque. Nam iaculis ligula sit amet ante efficitur, at facilisis lectus lacinia. Nullam vel nisi libero. Donec facilisis ipsum quis enim porttitor pharetra in pulvinar tortor. </p></div>
+             <div class="note-container">
+               <div class="sticky-note sticky-note-two" contenteditable="true" id="sticky">write something.....</div>
+             </div>
+          </div>
+
+        <div class="btn-group">
+          <div class="btn-l"><button class="btn btn-lf" id="clrbtn"><span>Submit</span></button></div> 
+          <div class="gbp"><p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque lorem iaculis commodo vestibulum. Vivamus non convallis nisl. Nullam ut lectus non magna maximus suscipit porta eu turpis.</p></div>
+          <div class="btn-r"><button class="btn btn-rt" id="clrbtn"><span>Submit</span></button></div> 
         </div>
-    </div>     
+          
+        </div> 
+       
+    </div>    
         
     <div class="container-m">
       <div class="box shadow">
@@ -99,11 +283,72 @@
             <li><a href="#support" style="text-decoration: none">Support</a></li>
             <li><a href="#resources" style="text-decoration: none">Resources</a></li>
             <li><a href="#contact" style="text-decoration: none">Contacts</a></li>
+            <li><a href="#dialogue" style="text-decoration: none">Dialogue</a></li>
           </ul>
         </div>
       </div>
+          
+        </div>
+
+      <div class="dashFooterBox">
+        <div class="dashFooterBoxInner">
+          <div class="dashFooterBtn">
+            <label for="show-foot">Site Info</label>
+          </div>
+          <input type="checkbox" id="show-foot" name="show-the-footer" class="r-foot-check">
+          <div class="dashFooter">
+            <div class="default-width">
+              <div class="dashFooterInner">
+                   <ol class="footNavUL">
+                      <li><a href="#"><i class="fa fa-house"></i></a</li>
+                      <li><a href="#about"><i class="fa fa-ribbon"></i></a></li>
+                      <li><a href="#support"><i class="fa fa-handshake-angle"></i></a></li>
+                      <li><a href="#resources"><i class="fa fa-user-plus"></i></a></li>
+                      <li><a href="#contact"><i class="fa fa-address-book"></i></a></li>
+                      <li><a href="#dialogue"><i class="fa fa-comment-dots"></i></a></li> 
+
+                     <li><div class="copy">
+                        <small>&copy;2023&nbsp;<strong>The Bonsall Project</strong>&nbsp; - All Rights Reserved</small></div></li> 
+                     
+                     <li><div class="legal">
+                          <small><a href="/">Terms of Use</a></small> 
+                          <small><a href="/">Privacy Agreemet</a></small> 
+                        </div>
+                     </li> 
+                     
+                    </ol>                
+                  </div>
+                </div> 
+          </div>
+        </div>
+      </div>
+  
     </div>
- 
-<script src="script.js"></script>
+
+<script>
+  $('.flipper').on('click', function () {
+     $('.card').toggleClass('flipped');
+  });
+
+  jQuery(document).ready(function($) {
+    if ($(".accordion").length) {
+      $(".accordion").addClass("js");
+      $(".accordion").find(".accordion-toggle").click(function() {
+        if ($(this).hasClass("open")) {
+          $(this).next().slideUp("fast");
+          $(this).removeClass("open");
+          $(this).addClass("closed");
+        } else {
+          $(this).next().slideDown("fast");
+          $(this).addClass("open");
+          $(this).removeClass("closed");
+          $(".accordion-content").not($(this).next()).slideUp("fast");
+          $(".accordion-toggle").not($(this)).removeClass("open");
+        }
+      });
+    }
+  });
+</script>
+<script src="script.js"></script> 
 </body>
 </html>
