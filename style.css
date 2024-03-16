@@ -487,6 +487,8 @@ ul li:hover {
 
 .phase {
   margin-top: 50px;
+  inline-size: 380px; 
+  overflow-wrap: break-word;
 }
 
 .flipper {
@@ -909,6 +911,8 @@ ul li:hover {
 
 .gbp {
   color: #1F51FF; 
+  width: 280px;
+  margin-left: -35px;
 }
 
 .btn:after {
@@ -940,10 +944,13 @@ ul li:hover {
   display: inline-block; 
   transition: all 0.3s ease-in-out;
   cursor: default;
-  margin-top: 30px; 
-
+  margin-top: 10px; 
   width: 50px;
   text-align: center; 
+}
+
+#topz p {
+  font-size: 16px !important; 
 }
 
 .tooltip {
@@ -952,16 +959,24 @@ ul li:hover {
   opacity: .40;
   width: 100%;
   padding: 0px 20px;
-  background: #986868; /* #954535; */
+  background: #986868; 
   color: white !important; 
   position: absolute;
   top:-140%;
   left: -25%;
   border-radius: 9px;
-  font: 16px;
+  font: 14px;
   transform: translateY(9px);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+}
+
+#tippy a {
+  font-size: 14px !important;
+  color: white; 
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto !important;
 }
 
 .tooltip::after {
@@ -979,7 +994,7 @@ ul li:hover {
   visibility: visible;
   transform: translateY(-10px);
   opacity: 1;
-    transition: .3s linear;
+  transition: .3s linear;
   animation: odsoky 1s ease-in-out infinite  alternate;
 }
 

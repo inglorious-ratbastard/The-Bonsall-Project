@@ -104,6 +104,7 @@ function toggle() {
 /** Note Controller **/  
 const noteList = document.querySelectorAll('#sticky');
 const clickHandler = (note) => {
+  
   note.target.innerHTML = ""; 
   note.target.removeEventListener('click', clickHandler);
 };
@@ -116,16 +117,18 @@ const right = document.querySelector('.btn-rt');
 
  const btnList = document.querySelectorAll('#clrbtn');
  const btnControl = (btn) => {
+   
+   document.querySelector('.sticky-note-one').innerHTML = "write something.....";
     left.addEventListener('click',()=>{
-       document.querySelector('.sticky-note-one').innerHTML = "Left Text Changed...";
+       document.querySelector('.sticky-note-one').innerHTML = "Your voice has been heard, thank you..";
        setTimeout( () => {
           btn.target.removeEventListener('click', btnControl);
           document.querySelector('.sticky-note-one').innerHTML = "write something.....";
        }, 20000);
     })
-    document.querySelector('.sticky-note-one').innerHTML = "write something.....";
+document.querySelector('.sticky-note-two').innerHTML = "write something.....";
     right.addEventListener('click',()=>{
-       document.querySelector('.sticky-note-two').innerHTML = "Right Text Changed..."; 
+       document.querySelector('.sticky-note-two').innerHTML = "Your voice has been heard, thank you.."; 
        setTimeout( () => {
            btn.target.removeEventListener('click', btnControl);
            document.querySelector('.sticky-note-two').innerHTML = "write something.....";
