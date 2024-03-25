@@ -629,11 +629,13 @@ ul li:hover {
 
 #acdtog h3 {
   color: #7393B3;  
+  line-height: 1.8;
 }
 
 .accordion-content p {
   color: #6F8FAF; 
   font-weight: italic; 
+  line-height: 0.3;
 }
 
 @keyframes bounce-rotate {
@@ -720,7 +722,7 @@ ul li:hover {
   width: 500px;
   list-style: none;
   position: relative;
-  display: inline-table; 
+  display: inline-table;  
 }
 
 .navlk ol ol {
@@ -769,7 +771,9 @@ ul li:hover {
 
 .navlk ol ol li a:hover {
   background: #47d583;
-  color: #fff;
+  color: #fff; 
+  opacity: 0.9; 
+  padding: 3px 10px; 
 }	
 
 #down-triangle {
@@ -972,11 +976,15 @@ ul li:hover {
 }
 
 #tippy a {
-  font-size: 14px !important;
+  font-size: 12px !important; 
   color: white; 
   overflow: hidden;
   white-space: nowrap;
   margin: auto !important;
+}
+
+#tippy p { 
+  font-size: 14px !important;
 }
 
 .tooltip::after {
