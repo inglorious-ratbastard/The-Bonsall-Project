@@ -134,7 +134,6 @@ document.querySelector('.sticky-note-two').innerHTML = "write something.....";
            document.querySelector('.sticky-note-two').innerHTML = "write something.....";
         }, 20000);
     }) 
- //  btn.target.removeEventListener('click', btnControl);
  };
  btnList.forEach(btn => {
    btn.addEventListener('click', btnControl); 
@@ -150,3 +149,38 @@ function locationHashChanged() {
   });
 }
 window.onhashchange = locationHashChanged;
+
+//** Note Flipper**//  
+  $('.flipper').on('click', function () {
+     $('.card').toggleClass('flipped');
+  });
+
+//** Resourses Link Accordian **// 
+  jQuery(document).ready(function($) {
+    if ($(".accordion").length) {
+      $(".accordion").addClass("js");
+      $(".accordion").find(".accordion-toggle").click(function() {
+        if ($(this).hasClass("open")) {
+          $(this).next().slideUp("fast");
+          $(this).removeClass("open");
+          $(this).addClass("closed");
+        } else {
+          $(this).next().slideDown("fast");
+          $(this).addClass("open");
+          $(this).removeClass("closed");
+          $(".accordion-content").not($(this).next()).slideUp("fast");
+          $(".accordion-toggle").not($(this)).removeClass("open");
+        }
+      });
+    }
+  });
+
+//** Contacts Image Hover **// 
+  const hover = document.querySelector(".navlk"); 
+  const bgimg = document.querySelector("#conlibg");
+    hover.addEventListener('mouseenter', function() {
+      bgimg.style.visibility = "hidden"; 
+  });
+    hover.addEventListener('mouseleave', function() {
+      bgimg.style.visibility = "visible";  
+  });
