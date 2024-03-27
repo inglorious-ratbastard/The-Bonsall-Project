@@ -8,7 +8,7 @@
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)<br>
 ![Green Sock](https://img.shields.io/badge/green%20sock-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
 ![p5js](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=FFFFFF)
-##### Live Development Version: <br> https://the-bonsall-project.onrender.com/
+##### Live Development Version: <br> https://inglorious-ratbastard.github.io/The-Bonsall-Project/
 ##### **About This Repo:**
 The original concept was to build something modern and flashy but not overdone to be submitted as part of a hackathon. It was left an incomplete template after discovering about the passing of a good friend. The project then became his namesake dedicated to depression awareness and suicide prevention.  
 ##### In Memory of John Bridger Bonsall (1989 - 2019)
