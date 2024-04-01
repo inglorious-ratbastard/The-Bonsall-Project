@@ -184,3 +184,4 @@ window.onhashchange = locationHashChanged;
     hover.addEventListener('mouseleave', function() {
       bgimg.style.visibility = "visible";  
   });
+

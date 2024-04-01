@@ -629,13 +629,28 @@ ul li:hover {
 
 #acdtog h3 {
   color: #7393B3;  
-  line-height: 1.8;
+  line-height: 1.8;;
 }
+
+.accordion-content ol {
+  list-style-type: none;
+}  
 
 .accordion-content p {
   color: #6F8FAF; 
-  font-weight: italic; 
-  line-height: 0.3;
+  font-weight: bold; 
+  line-height: 0.3; 
+}  
+
+.accordion-content p a {
+  color: #6F8FAF;
+  font-family: 'Poppins';
+  font-size: 12px; 
+  margin-left: -35px;
+}
+
+.accordion-content p a:hover {
+  color: white;  
 }
 
 @keyframes bounce-rotate {
