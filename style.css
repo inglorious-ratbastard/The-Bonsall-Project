@@ -52,28 +52,28 @@ body {
     position: fixed; 
     width: 100%;
     height: 100vh;
-    background: #101010;
+    background: #EADDCA;
     opacity: 0.9;
     animation-iteration-count: #101010; 
 }
   
 .overlay p {
-    font-size: 45px; 
+    font-size: 30px; 
     font-weight: 100;
 }
-  
+
 .screen {
-    color: white;
+    color: #6F4E37; 
     position: absolute; 
     top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 }
 
-.brand {
-  color: white; 
+.brand { 
+  color: #B87333;
   font-size: 15px !important; 
-  margin-top: 230px !important; 
+  margin-top: 250px !important; 
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -93,6 +93,8 @@ body {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border-color: #8B4513;
 }
 
 button {
@@ -103,7 +105,7 @@ button {
     font-size: 10px;
     letter-spacing: 6px;
     color: #fff;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     text-transform: uppercase;
     outline: none;
     overflow: hidden;
@@ -120,8 +122,8 @@ button {
 
 .myBtn:before {
     content: "";
-    position: absolute;
-    background: #fff;
+    position: absolute; 
+    background-color: #D2B48C;
     bottom: 0;
     left: 0;
     right: 0;
@@ -354,8 +356,9 @@ ol.footNavUL li  a {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 23px;
   font-family: 'Abhaya Libre', serif;
+  color: black;
 }
 
 p {
@@ -367,7 +370,7 @@ p {
 }
 .port-area, .contact-area {
     background: #F0FFFF; 
-    color #fff;
+    color: #fff;
 } 
 
 .info-area {
@@ -477,12 +480,10 @@ ul li:hover {
 
 /* About */
 .grid-container {
+    color: black;
     display: grid;
     grid-template-columns: 6fr 6fr;
-    grid-column-gap: 20px
-    grid-row-gap: 20px
-    justify-items: stretch
-    align-items: stretch
+    grid-column-gap: 20px 
  }
 
 .phase {
@@ -523,7 +524,6 @@ ul li:hover {
   align-items: center;
   font: 10px 'Abhaya Libre', serif;
   line-height: normal;
-  font-smoothing: antialiased;
   color: #47525d;
   padding: 5px 5px 5px 5px;
 }
@@ -692,11 +692,7 @@ ul li:hover {
   margin-left: 28px; 
 }
 
-.accordion {
-  h3 {
-    color: $color-secondary;
-  }
-  
+.accordion { 
   .accordion-toggle {
     cursor: pointer;
     &.open {
@@ -713,7 +709,7 @@ ul li:hover {
   .accordion-content {
     margin-left: 27px; 
   }
-}
+} 
 
 #resources .phase {
   margin-left: -10px; 
@@ -804,8 +800,10 @@ ul li:hover {
 
 #conlibg {
   float: right; 
-  margin-top: -380px !important; 
-  margin-right: 120px !important; 
+  margin-top: -410px !important; 
+  margin-right: 30px !important; 
+  width: 300px !important; 
+  opacity: 0.8;
 }
 
 /* Dialogue */ 
