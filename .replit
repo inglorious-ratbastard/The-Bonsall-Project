@@ -1,4 +1,5 @@
 hidden=[".config"]
+modules = ["web", "nodejs-20", "nix"]
 
 # hosting is currently hardcoded for this language
 # [hosting]
@@ -6,7 +7,7 @@ hidden=[".config"]
 # directory= "/"
 
 [nix]
-channel = "stable-21_11"
+channel = "stable-25_05"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
