@@ -73,8 +73,11 @@ window.onload = function() {
     document.getElementById("checkbox").checked = false;    
   } else {
     document.body.style.background = "#ffffff"; 
-    document.getElementById("text").innerHTML = "Turn off the lights!";
-    document.getElementById("text").style.color = "#000000"; 
+    const textElement = document.getElementById("text");
+    if (textElement) {
+      textElement.innerHTML = "Turn off the lights!";
+      textElement.style.color = "#000000";
+    }
     window.localStorage.getItem("isDarkMode") === "true";
   }
 }
