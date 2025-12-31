@@ -49,6 +49,64 @@
        }); 
            
       }
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    var ackOpen = document.getElementById("ackOpen");
+    var ackOverlay = document.getElementById("ackOverlay");
+    var ackModal = document.getElementById("ackModal");
+    var ackClose = document.getElementById("ackClose");
+
+    if (!ackOpen) return;
+
+    function openAck() {
+      ackOverlay.style.display = "block";
+
+      TweenMax.to(ackOverlay, 0.25, {
+        opacity: 1
+      });
+
+      TweenMax.to(ackModal, 0.4, {
+        opacity: 1,
+        scale: 1,
+        ease: Power2.easeOut
+      });
+    }
+
+    function closeAck() {
+      TweenMax.to(ackModal, 0.25, {
+        opacity: 0,
+        scale: 0.85,
+        ease: Power2.easeIn,
+        onComplete: function () {
+          ackOverlay.style.display = "none";
+          ackOverlay.style.opacity = 0;
+        }
+      });
+    }
+
+    ackOpen.addEventListener("click", function (e) {
+      e.preventDefault();
+      openAck();
+    });
+
+    ackClose.addEventListener("click", closeAck);
+
+    ackOverlay.addEventListener("click", function (e) {
+      if (e.target === ackOverlay) closeAck();
+    });
+
+  });
+
+document.querySelectorAll('.ack-link').forEach(function(link){
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+    var target = document.querySelector(this.getAttribute('href'));
+    if(target){
+      target.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
+  });
+});
              
     $(function() {
     $('.box').click(function() {
@@ -56,7 +114,6 @@
     })
 })
 
-/** Color Mode Toggle **/  
 if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
   window.localStorage.setItem("isDarkMode", "true");
 }
@@ -104,7 +161,6 @@ function toggle() {
   }
 }
 
-/** Note Controller **/  
 const noteList = document.querySelectorAll('#sticky');
 const clickHandler = (note) => {
   
@@ -152,13 +208,11 @@ function locationHashChanged() {
   });
 }
 window.onhashchange = locationHashChanged;
-
-//** Note Flipper**//  
+ 
   $('.flipper').on('click', function () {
      $('.card').toggleClass('flipped');
   });
 
-//** Resourses Link Accordian **// 
   jQuery(document).ready(function($) {
     if ($(".accordion").length) {
       $(".accordion").addClass("js");
@@ -178,7 +232,6 @@ window.onhashchange = locationHashChanged;
     }
   });
 
-//** Contacts Image Hover **// 
   const hover = document.querySelector(".navlk"); 
   const bgimg = document.querySelector("#conlibg");
     hover.addEventListener('mouseenter', function() {
@@ -187,4 +240,3 @@ window.onhashchange = locationHashChanged;
     hover.addEventListener('mouseleave', function() {
       bgimg.style.visibility = "visible";  
   });
-
