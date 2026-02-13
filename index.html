@@ -394,35 +394,20 @@ Submit button to anonymously release your message into the ether. Every post sen
 <script src="script.js"></script> 
 
 <script>
-  (function() {
-    function goHomeAndTop() {
-      try {
-        history.replaceState(null, '', '#home');
-      } catch (e) { 
-        location.hash = '#home';
-      }
-
-      setTimeout(function() {
-        window.scrollTo(0, 0);
-      }, 20);
+(function () {
+  
+  function clearHashAndGoTop() {
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname);
     }
 
-    window.addEventListener('pageshow', function(event) {
-      goHomeAndTop();
-    }, false);
+    window.scrollTo(0, 0);
+  }
 
-    window.addEventListener('load', function() {
-      goHomeAndTop();
-    }, false);
+  window.addEventListener("load", clearHashAndGoTop);
+  window.addEventListener("pageshow", clearHashAndGoTop);
 
-    window.addEventListener('beforeunload', function() {
-      try {
-        history.replaceState(null, '', '#home');
-      } catch (e) {
-        location.hash = '#home';
-      }
-    }, false); 
-  })(); 
+})(); 
 </script>
 
 </body>
