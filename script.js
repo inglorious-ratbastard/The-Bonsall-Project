@@ -170,34 +170,37 @@ const clickHandler = (note) => {
 noteList.forEach(note => {
 note.addEventListener('click', clickHandler);
 });
-
-const left = document.querySelector('.btn-lf');
-const right = document.querySelector('.btn-rt');
-
- const btnList = document.querySelectorAll('#clrbtn');
- const btnControl = (btn) => {
-   
-   document.querySelector('.sticky-note-one').innerHTML = "write something.....";
-    left.addEventListener('click',()=>{
-       document.querySelector('.sticky-note-one').innerHTML = "Your voice has been heard, thank you..";
-       setTimeout( () => {
-          btn.target.removeEventListener('click', btnControl);
-          document.querySelector('.sticky-note-one').innerHTML = "write something.....";
-       }, 20000);
-    })
-document.querySelector('.sticky-note-two').innerHTML = "write something.....";
-    right.addEventListener('click',()=>{
-       document.querySelector('.sticky-note-two').innerHTML = "Your voice has been heard, thank you.."; 
-       setTimeout( () => {
-           btn.target.removeEventListener('click', btnControl);
-           document.querySelector('.sticky-note-two').innerHTML = "write something.....";
-        }, 20000);
-    }) 
- };
- btnList.forEach(btn => {
-   btn.addEventListener('click', btnControl); 
- }); 
  
+ const noteOne = document.querySelector('.sticky-note-one');
+ const noteTwo = document.querySelector('.sticky-note-two');
+ 
+ const leftBtn = document.querySelector('.btn-lf');
+ const rightBtn = document.querySelector('.btn-rt');
+
+ leftBtn.addEventListener('click', function () {
+
+  noteOne.innerHTML = "Your voice has been heard, thank you..";
+
+  leftBtn.disabled = true; 
+
+  setTimeout(function () {
+    noteOne.innerHTML = "write something.....";
+    leftBtn.disabled = false;
+  }, 5000);
+});
+
+rightBtn.addEventListener('click', function () {
+
+  noteTwo.innerHTML = "Your voice has been heard, thank you..";
+
+  rightBtn.disabled = true;
+
+  setTimeout(function () {
+    noteTwo.innerHTML = "write something.....";
+    rightBtn.disabled = false;
+  }, 5000);
+}); 
+
   $('.flipper').on('click', function () {
      $('.card').toggleClass('flipped');
   });
