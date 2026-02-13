@@ -245,7 +245,7 @@ rightBtn.addEventListener('click', function () {
           behavior: "smooth",
           block: "start"
         });
-        history.replaceState(null, null, "/");
+        history.replaceState(null, null, window.location.pathname); 
       }
     });
   });
