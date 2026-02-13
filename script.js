@@ -196,18 +196,7 @@ document.querySelector('.sticky-note-two').innerHTML = "write something.....";
  };
  btnList.forEach(btn => {
    btn.addEventListener('click', btnControl); 
- });
-
-function locationHashChanged() {
-  if (location.hash !== "#dialogue") {
-     document.querySelector('.sticky-note-one').innerHTML = "write something.....";
-     document.querySelector('.sticky-note-two').innerHTML = "write something.....";  
-  }
-  noteList.forEach(note => {
-    note.addEventListener('click', clickHandler);
-  });
-}
-window.onhashchange = locationHashChanged;
+ }); 
  
   $('.flipper').on('click', function () {
      $('.card').toggleClass('flipped');
