@@ -1,5 +1,5 @@
 hidden=[".config"]
-modules = ["web", "nodejs-20", "nix", "python-3.11"]
+modules = ["web", "nodejs-20", "nix"]
 
 # hosting is currently hardcoded for this language
 # [hosting]
@@ -36,6 +36,7 @@ provideFormatter = true
 
 [agent]
 expertMode = true
+stack = "BEST_EFFORT_FALLBACK"
 
 [workflows]
 runButton = "Project"
@@ -49,6 +50,10 @@ author = "agent"
 task = "workflow.run"
 args = "static-server"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
 [[workflows.workflow]]
 name = "static-server"
 author = "agent"
@@ -56,6 +61,18 @@ author = "agent"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python3 -m http.server 5000 --directory ."
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run start"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
