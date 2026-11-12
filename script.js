@@ -1,4 +1,50 @@
-  function fadeOut() {
+(function () {
+
+    const MIN_WIDTH = 1024;
+
+    function checkViewport() {
+
+        const errorPage = document.getElementById("viewport-error");
+        const websiteContent = document.querySelectorAll(
+            "body > *:not(#viewport-error)"
+        );
+
+        const unsupported = window.innerWidth < MIN_WIDTH;
+
+        if (unsupported) {
+
+            errorPage.style.display = "flex";
+
+            websiteContent.forEach(element => {
+                element.style.display = "none";
+            });
+
+            document.body.style.overflow = "hidden";
+
+        } else {
+
+            errorPage.style.display = "none";
+
+            websiteContent.forEach(element => {
+                element.style.display = "";
+            });
+
+            document.body.style.overflow = "";
+
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        checkViewport();
+
+        window.addEventListener("resize", checkViewport);
+
+    });
+
+})();
+
+function fadeOut() {
       
       TweenMax.to(".myBtn", 1, {
           y: -100,
